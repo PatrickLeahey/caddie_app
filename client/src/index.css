@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(20, 112, 69);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(213, 210, 17);
+  background-color: rgb(20, 112, 69);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #383f4d;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    sans-serif;
+}
+
+/* 
+=================
+Table
+=====================
+*/
+
+.table-container {
+  margin: 24px;
+  padding: 1rem;
+  border: .1rem solid #e2e8f0;
+  border-radius: .5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  
+}
+
+.table th {
+  background: #fff;
+  padding: 8px 10px;
+  border-bottom: 1px solid #1a1a1a;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table td {
+  border-top: 1px solid #ddd;
+  padding: 8px 20px;
+}
+
+.table tbody tr:first-child td {
+  border-top: none;
+}
+
+.table tbody tr:nth-child(n) td {
+  background: #eff0f0;
+}
+
+.table tbody tr:nth-child(2n) td {
+  background: #fff;
+}
+
+/* 
+=================
+Form
+=====================
+*/
+
+.form-container {
+  margin: 24px;
+  padding: 1rem;
+  border: .1rem solid #e2e8f0;
+  border-radius: .5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 10rem;
+  padding: 1rem;
+  border: .1rem solid #e2e8f0;
+  border-radius: .5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* 
+=================
+Button
+=====================
+*/
+
+.custom-button {
+  width: 10rem;
+  background-color: rgb(20, 112, 69);
+  color: white;
+  padding: 1rem;
+  border: .1rem solid #e2e8f0;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #808182;
+}
