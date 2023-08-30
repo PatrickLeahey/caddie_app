@@ -18,7 +18,7 @@ This is a simple web application that allows users to enter golf rounds and calc
 cd server
 
 2. Install dependencies:
-npm install
+```(bash)npm install```
 
 3. Start the server:
 npm start
