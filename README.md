@@ -35,7 +35,7 @@ The backend server will start running on http://localhost:5000.
 
 1. Navigate to the `client` (frontend) directory:
 ```console
-npm client
+cd client
 ```
 2. Install dependencies:
 ```console
