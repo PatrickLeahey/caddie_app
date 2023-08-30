@@ -1,12 +1,12 @@
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
 
-const Table = ({ data, columns }) => {
+const Table = ({ data, columns, deleteRoundById }) => {
 
   return (
     <table className="table">
       <TableHead {...{ columns }}/>
-      <TableBody {...{ columns, data }}/>
+      <TableBody {...{ columns, data, deleteRoundById}}/>
     </table>
   );
 };
